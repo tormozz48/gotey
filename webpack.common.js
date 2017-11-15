@@ -2,6 +2,7 @@
 
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const srcPath = path.resolve(__dirname, 'src');
 const ouputPath = path.resolve(__dirname, 'www');
@@ -40,5 +41,9 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('[name].min.css'),
+        new HtmlWebpackPlugin()
+    ]
 };

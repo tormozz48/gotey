@@ -1,13 +1,11 @@
 'use strict';
 
-const merge = require('lodash/merge');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const merge = require('webpack-merge');
 
 const commonConfig = require('./webpack.common');
 
 module.exports = merge(
-    {},
     commonConfig,
     {
         plugins: [
@@ -20,7 +18,6 @@ module.exports = merge(
                     }
                 }
             }),
-            new ExtractTextPlugin('[name].min.css'),
             new webpack.EnvironmentPlugin(['NODE_ENV'])
         ]
     }
