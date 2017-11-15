@@ -4,6 +4,8 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const meta = require('./data/meta');
+
 const srcPath = path.resolve(__dirname, 'src');
 const ouputPath = path.resolve(__dirname, 'www');
 
@@ -44,6 +46,15 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('[name].min.css'),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            title: meta.title,
+            meta: {
+                description: meta.description,
+                keywords: meta.keywords.join(',')
+            },
+            cache: true,
+            showErrors: true,
+            template: path.join(srcPath, 'index.html')
+        })
     ]
 };
