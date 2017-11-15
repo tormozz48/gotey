@@ -1,0 +1,52 @@
+{
+  "name": "gotey",
+  "version": "1.0.0",
+  "description": "website gotey.ru",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "precommit": "npm run lint",
+    "prepublish": "NODE_ENV=production webpack --config=webpack.prod.js",
+    "start": "webpack-dev-server --config=webpack.dev.js --progress --colors"
+  },
+  "keywords": [
+    "gotey",
+    "website",
+    "react",
+    "redux",
+    "js"
+  ],
+  "author": "andrey.kuznetsov48@yandex.ru",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "html-react-parser": "^0.4.0",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-clipboard.js": "^1.1.2",
+    "react-dom": "^16.0.0",
+    "react-lazy-image": "^1.1.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.8.0",
+    "eslint-config-gemini-testing": "^2.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
