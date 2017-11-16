@@ -7,6 +7,7 @@ import NavBar from './nav-bar';
 import Panel from './panel';
 import PanelMap from './panel-map';
 import ProductTable from './product-table';
+import Footer from './footer';
 
 class Application extends Component {
     render() {
@@ -34,6 +35,7 @@ class Application extends Component {
                         </Col>
                     </Row>
                 </Grid>
+                <Footer/>
             </div>
         );
     }

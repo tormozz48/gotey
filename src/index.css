@@ -5,3 +5,23 @@
 .panel-map .panel-body {
     padding: 0;
 }
+
+.footer {
+    height: 35px;
+    min-height: 35px;
+    padding-top: 2px;
+}
+
+.copyright {
+    font-size: 9px;
+    padding-right: 7px;
+    padding-top: 10px;
+}
+
+.copyright__author {
+    padding-right: 3px;
+}
+
+.copyright__year {
+    padding-left: 3px;
+}
