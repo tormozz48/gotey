@@ -1,0 +1,39 @@
+{
+    "navigation": {
+        "title": "ООО \"ГОТЭЙ\"",
+        "address": "г. Симферополь, ул. Генерала Васильева 28",
+        "contacts": {
+            "title": "Контакты",
+            "items": [
+                {
+                    "icon": "glyphicon-phone-alt",
+                    "value": "Игорь: +7-978-756-81-11"
+                },
+                {
+                    "icon": "glyphicon-phone-alt",
+                    "value": "Александр: +7-978-756-81-08"
+                },
+                {
+                    "icon": "glyphicon-envelope",
+                    "value": "e-mail: CLL-GOTEY@mail.ru"
+                }
+            ]
+        }
+    },
+    "panels": [
+        {
+            "title": "Доставка",
+            "icon": "globe",
+            "body": "Доставка по Симферополю и городам Крыма"
+        },
+        {
+            "title": "Оплата",
+            "icon": "shopping-cart",
+            "body": "Наличный и безналичный расчет с НДС"
+        },
+        {
+            "title": "Карта проезда",
+            "map": true
+        }
+    ]
+}

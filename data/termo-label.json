@@ -1,0 +1,10 @@
+{
+    "title":"Термоэтикетка",
+    "items":[
+        {"name":"58х30 ЕСО","type":"Fasson","amount":60},
+        {"name":"58х40 ЕСО","type":"Fasson","amount":60},
+        {"name":"58х60 ЕСО","type":"Fasson","amount":60},
+        {"name":"30х20 ЕСО","type":"Fasson","amount":56},
+        {"name":"43х25 ЕСО","type":"Fasson","amount":75}
+    ]
+}
