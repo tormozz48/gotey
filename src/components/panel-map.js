@@ -9,7 +9,7 @@ export default (props) => {
 
     const mapState = {center: navigation.point, zoom: 16};
     return (
-        <Panel header={header}>
+        <Panel header={header} className="panel-map">
             <YMaps>
                 <Map state={mapState} width={'100%'}>
                     <Placemark
