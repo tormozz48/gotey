@@ -5,22 +5,24 @@ import {Grid, Row, Col} from 'react-bootstrap';
 
 import NavBar from './nav-bar';
 import Panel from './panel';
+import PanelMap from './panel-map';
 import ProductTable from './product-table';
 
 class Application extends Component {
     render() {
-        const {panels, products} = this.props;
+        const {panels, navigation, products} = this.props;
 
         return (
             <div>
                 <NavBar/>
                 <Grid className="application-content">
                     <Row className="show-grid">
-                        <Col xs={3} md={3}>
+                        <Col xs={4} md={4}>
                             <Panel params={panels[0]}/>
                             <Panel params={panels[1]}/>
+                            <PanelMap params={panels[2]} navigation={navigation}/>
                         </Col>
-                        <Col xs={9} md={9}>
+                        <Col xs={8} md={8}>
                             <ProductTable product={products.cashTape}/>
                             <ProductTable product={products.checkTape}/>
                             <ProductTable product={products.faxPaper}/>
@@ -39,6 +41,7 @@ class Application extends Component {
 
 export default connect(
     (state) => ({
+        navigation: state.main.navigation,
         panels: state.main.panels,
         products: state.products
     })
