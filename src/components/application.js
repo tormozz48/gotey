@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import {Grid, Row, Col} from 'react-bootstrap';
 
-import NavBar from './nav-bar';
+import Header from './header';
 import Panel from './panel';
 import PanelMap from './panel-map';
 import Products from './products';
@@ -15,7 +15,7 @@ class Application extends Component {
 
         return (
             <div>
-                <NavBar/>
+                <Header navigation={navigation}/>
                 <Grid className="application-content" fluid={true}>
                     <Row className="show-grid">
                         <Col lg={4} md={5} sm={5} xs={12}>

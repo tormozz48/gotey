@@ -9,7 +9,7 @@ export default (props) => {
         <div>
             <Panel header={header}>
                 <span><Glyphicon glyph={params.icon}/></span>
-                <span> {params.body}</span>
+                <span>{params.body}</span>
             </Panel>
         </div>
     );

@@ -6,8 +6,8 @@ export default (props) => {
     const {params, navigation} = props;
 
     const header = <h3>{params.title}</h3>;
-
     const mapState = {center: navigation.point, zoom: 16};
+
     return (
         <Panel header={header} className="panel-map">
             <YMaps>

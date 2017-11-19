@@ -7,15 +7,15 @@
             "title": "Контакты",
             "items": [
                 {
-                    "icon": "glyphicon-phone-alt",
+                    "icon": "phone-alt",
                     "value": "Игорь: +7-978-756-81-11"
                 },
                 {
-                    "icon": "glyphicon-phone-alt",
+                    "icon": "phone-alt",
                     "value": "Александр: +7-978-756-81-08"
                 },
                 {
-                    "icon": "glyphicon-envelope",
+                    "icon": "envelope",
                     "value": "e-mail: CLL-GOTEY@mail.ru"
                 }
             ]
