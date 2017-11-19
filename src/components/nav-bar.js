@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, NavItem, NavDropdown, MenuItem, Nav} from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
 
 import meta from '../../data/meta';
 

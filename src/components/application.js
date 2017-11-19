@@ -16,7 +16,7 @@ class Application extends Component {
         return (
             <div>
                 <NavBar/>
-                <Grid className="application-content">
+                <Grid className="application-content" fluid={true}>
                     <Row className="show-grid">
                         <Col xs={4} md={4}>
                             <Panel params={panels[0]}/>
@@ -24,14 +24,18 @@ class Application extends Component {
                             <PanelMap params={panels[2]} navigation={navigation}/>
                         </Col>
                         <Col xs={8} md={8}>
-                            <ProductTable product={products.cashTape}/>
-                            <ProductTable product={products.checkTape}/>
-                            <ProductTable product={products.faxPaper}/>
-                            <ProductTable product={products.termoLabel}/>
-                            <ProductTable product={products.officePaper}/>
-                            <ProductTable product={products.lpuPaper}/>
-                            <ProductTable product={products.rollPaper}/>
-                            <ProductTable product={products.plotterRolls}/>
+                            <ProductTable product={products.cashTape} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.checkTape} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.faxPaper} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.termoLabel} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.officePaper} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.lpuPaper} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.rollPaper} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.plotterRolls} columns={['name', 'type', 'amount']}/>
+                            <ProductTable product={products.propilenTape} columns={['typeSize', 'winding']}/>
+                            <ProductTable product={products.stretchFilmFood} columns={['typeSize', 'winding']}/>
+                            <ProductTable product={products.termFilm} columns={['typeSize', 'winding']}/>
+
                         </Col>
                     </Row>
                 </Grid>
