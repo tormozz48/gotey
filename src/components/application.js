@@ -6,7 +6,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import NavBar from './nav-bar';
 import Panel from './panel';
 import PanelMap from './panel-map';
-import ProductTable from './product-table';
+import Products from './products';
 import Footer from './footer';
 
 class Application extends Component {
@@ -18,24 +18,13 @@ class Application extends Component {
                 <NavBar/>
                 <Grid className="application-content" fluid={true}>
                     <Row className="show-grid">
-                        <Col xs={4} md={4}>
+                        <Col lg={4} md={5} sm={5} xs={12}>
                             <Panel params={panels[0]}/>
                             <Panel params={panels[1]}/>
                             <PanelMap params={panels[2]} navigation={navigation}/>
                         </Col>
-                        <Col xs={8} md={8}>
-                            <ProductTable product={products.cashTape} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.checkTape} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.faxPaper} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.termoLabel} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.officePaper} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.lpuPaper} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.rollPaper} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.plotterRolls} columns={['name', 'type', 'amount']}/>
-                            <ProductTable product={products.propilenTape} columns={['typeSize', 'winding']}/>
-                            <ProductTable product={products.stretchFilmFood} columns={['typeSize', 'winding']}/>
-                            <ProductTable product={products.termFilm} columns={['typeSize', 'winding']}/>
-
+                        <Col lg={8} md={7} sm={7} xs={12}>
+                            <Products products={products}/>
                         </Col>
                     </Row>
                 </Grid>
