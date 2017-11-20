@@ -12,11 +12,11 @@ export default (props) => {
     function drawMenuItems(items) {
         return items.map((item) => {
             const imgSrc = `images/${item.target}.jpg`;
-            const tooltip = (<Tooltip>{item.alt}</Tooltip>);
+            const tooltip = (<Tooltip id={item.target}>{item.alt}</Tooltip>);
 
             return (
-                <OverlayTrigger placement="bottom" overlay={tooltip}>
-                    <div key={item.target} className="menu-item">
+                <OverlayTrigger key={item.target} placement="bottom" overlay={tooltip}>
+                    <div className="menu-item">
                         <Link className="menu-item" to={item.target} smooth={true} duration={500}>
                             <Image src={imgSrc} thumbnail/>
                         </Link>
