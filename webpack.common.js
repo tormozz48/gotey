@@ -42,17 +42,13 @@ module.exports = {
                         presets: ['env', 'react', 'stage-0']
                     }
                 }
-            }//,
-            // {
-            //     test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
-            //     //use: 'base64-inline-loader?limit=1000&name=[name].[ext]'
-            //     loader: 'file'
-            // }
+            }
         ]
     },
     plugins: [
         new CopyWebpackPlugin([
-            {from: '../data/images', to: 'images'}
+            {from: '../data/images', to: 'images'},
+            {from: '../search'}
         ]),
         new ExtractTextPlugin('[name].min.css'),
         new HtmlWebpackPlugin({
