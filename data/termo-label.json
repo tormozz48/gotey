@@ -1,4 +1,5 @@
 {
+    "id": "termo-label",
     "title":"Термоэтикетка",
     "items":[
         {"name":"58х30 ЕСО","type":"Fasson","amount":60},

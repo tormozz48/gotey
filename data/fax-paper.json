@@ -1,4 +1,5 @@
 {
+    "id": "fax-paper",
     "title":"Факс бумага",
     "items":[
         {"name":"210мм. 19 метров","type":"JTK","amount":60}

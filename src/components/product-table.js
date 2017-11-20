@@ -50,11 +50,11 @@ const configureColumns = (function() {
 })();
 
 export default (props) => {
-    const {title, items} = props.product;
+    const {title, items, id} = props.product;
     const header = <h3>{title}</h3>;
 
     return (
-        <div>
+        <div id={id}>
             <Panel header={header}>
                 <BootstrapTable data={items} striped>
                     {configureColumns(props.columns)}

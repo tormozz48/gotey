@@ -21,6 +21,7 @@
   "author": "andrey.kuznetsov48@yandex.ru",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-transform-object-assign": "^6.22.0",
     "classnames": "^2.2.5",
     "html-react-parser": "^0.4.0",
     "lodash": "^4.17.4",
@@ -32,6 +33,7 @@
     "react-dom": "^16.0.0",
     "react-lazy-image": "^1.1.0",
     "react-redux": "^5.0.6",
+    "react-scroll": "^1.6.4",
     "react-share": "^1.17.0",
     "react-size": "^0.1.1",
     "react-yandex-maps": "^2.1.3",
