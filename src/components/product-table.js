@@ -56,7 +56,7 @@ export default (props) => {
     return (
         <div>
             <Panel header={header}>
-                <BootstrapTable data={items} striped hover>
+                <BootstrapTable data={items} striped>
                     {configureColumns(props.columns)}
                 </BootstrapTable>
             </Panel>

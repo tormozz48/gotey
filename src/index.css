@@ -62,3 +62,21 @@ body {
 .copyright__year {
     padding-left: 3px;
 }
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f1f9fd
+}
+
+.container-fluid .jumbotron {
+    padding: 0;
+}
+
+.jumbotron {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 5px;
+    display: inline-block;
+}

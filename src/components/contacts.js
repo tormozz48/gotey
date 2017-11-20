@@ -11,7 +11,5 @@ export default (props) => {
         ));
     }
 
-    console.log(props.contacts);
-
     return (<div>{drawContacts(props.contacts.items)}</div>);
 };

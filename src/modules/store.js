@@ -4,6 +4,7 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import logger from 'redux-logger';
 
 import main from '../../data/main';
+import menu from '../../data/menu.json';
 
 //products
 import cashTape from '../../data/cash-tape.json';
@@ -27,6 +28,7 @@ if (process.env.NODE_ENV !== 'production') {
 function getInitialState() {
     return {
         main,
+        menu,
         products: {
             cashTape,
             checkTape,
