@@ -4,7 +4,11 @@ body {
 }
 
 .application-content {
-    padding-top: 70px;
+    padding-top: 105px;
+}
+
+.brand {
+    font-size: 28px;
 }
 
 .contact__value {

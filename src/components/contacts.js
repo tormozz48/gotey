@@ -11,5 +11,10 @@ export default (props) => {
         ));
     }
 
-    return (<div>{drawContacts(props.contacts.items)}</div>);
+    return (
+        <div>
+            <h5 className="address">{props.address}</h5>
+            {drawContacts(props.contacts.items)}
+        </div>
+    );
 };
