@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -41,10 +42,18 @@ module.exports = {
                         presets: ['env', 'react', 'stage-0']
                     }
                 }
-            }
+            }//,
+            // {
+            //     test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+            //     //use: 'base64-inline-loader?limit=1000&name=[name].[ext]'
+            //     loader: 'file'
+            // }
         ]
     },
     plugins: [
+        new CopyWebpackPlugin([
+            {from: '../data/images', to: 'images'}
+        ]),
         new ExtractTextPlugin('[name].min.css'),
         new HtmlWebpackPlugin({
             title: meta.title,
