@@ -9,7 +9,8 @@
     "precommit": "npm run lint",
     "production": "NODE_ENV=production webpack --config=webpack.prod.js  --progress --colors",
     "dev": "webpack-dev-server --config=webpack.dev.js --progress --colors",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "ghPages": "npm run production && node index.js"
   },
   "keywords": [
     "gotey",
