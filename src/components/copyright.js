@@ -1,5 +1,5 @@
 import React from 'react';
-import {Glyphicon} from 'react-bootstrap';
+import Glyphicon from 'react-bootstrap/es/Glyphicon.js';
 
 export default () => {
     return (

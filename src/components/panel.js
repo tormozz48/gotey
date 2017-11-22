@@ -1,5 +1,6 @@
 import React from 'react';
-import {Panel, Glyphicon} from 'react-bootstrap';
+import Panel from 'react-bootstrap/es/Panel.js';
+import Glyphicon from 'react-bootstrap/es/Glyphicon.js';
 
 export default (props) => {
     const {params} = props;

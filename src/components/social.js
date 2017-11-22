@@ -1,9 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {ShareButtons, generateShareIcon} from 'react-share';
-
-const {
+import {
     FacebookShareButton,
     GooglePlusShareButton,
     TwitterShareButton,
@@ -11,15 +9,16 @@ const {
     OKShareButton,
     TelegramShareButton,
     EmailShareButton
-} = ShareButtons;
+} from 'react-share/lib/share-buttons.js';
+import {generateIcon} from 'react-share/lib/generateIcon.js';
 
-const FacebookIcon = generateShareIcon('facebook');
-const TwitterIcon = generateShareIcon('twitter');
-const GooglePlusIcon = generateShareIcon('google');
-const VKIcon = generateShareIcon('vk');
-const OKIcon = generateShareIcon('ok');
-const TelegramIcon = generateShareIcon('telegram');
-const EmailIcon = generateShareIcon('email');
+const FacebookIcon = generateIcon('facebook');
+const TwitterIcon = generateIcon('twitter');
+const GooglePlusIcon = generateIcon('google');
+const VKIcon = generateIcon('vk');
+const OKIcon = generateIcon('ok');
+const TelegramIcon = generateIcon('telegram');
+const EmailIcon = generateIcon('email');
 
 export default (props) => {
     const {url, title} = props;
@@ -91,7 +90,7 @@ export default (props) => {
         </div>
     );
 
-    const whatsAppShare = (
+    const emailShare = (
         <div className="social">
             <EmailShareButton
                 url={url}
@@ -111,7 +110,7 @@ export default (props) => {
             {googlePlusShare}
             {vkShare}
             {okShare}
-            {whatsAppShare}
+            {emailShare}
         </span>
     );
 };

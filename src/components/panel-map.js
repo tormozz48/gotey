@@ -1,5 +1,5 @@
 import React from 'react';
-import {Panel} from 'react-bootstrap';
+import Panel from 'react-bootstrap/es/Panel.js';
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
 
 export default (props) => {

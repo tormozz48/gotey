@@ -1,7 +1,10 @@
 'use strict';
 
 import React from 'react';
-import {Jumbotron, Image, Tooltip, OverlayTrigger} from 'react-bootstrap';
+import Jumbotron from 'react-bootstrap/es/Jumbotron.js';
+import Image from 'react-bootstrap/es/Image.js';
+import Tooltip from 'react-bootstrap/es/Tooltip.js';
+import OverlayTrigger from 'react-bootstrap/es/OverlayTrigger.js';
 import Scroll from 'react-scroll';
 
 const Link = Scroll.Link;

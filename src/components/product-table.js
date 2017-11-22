@@ -1,11 +1,12 @@
 'use strict';
 
 import React from 'react';
-import {Panel} from 'react-bootstrap';
+import Panel from 'react-bootstrap/es/Panel.js';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
-import _ from 'lodash';
+import pick from 'lodash-es/pick';
+import values from 'lodash-es/values';
 
 const configureColumns = (function() {
     const textColumn = (key, label, isKey = false) => {
@@ -41,11 +42,8 @@ const configureColumns = (function() {
     };
 
     return (columns = []) => {
-        return _(columnsMap)
-            .pick(columns)
-            .values()
-            .map((v) => v())
-            .value();
+        const neededColumns = values(pick(columnsMap, columns));
+        return neededColumns.map((v) => v());
     };
 })();
 

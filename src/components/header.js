@@ -1,5 +1,6 @@
 import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import Navbar from 'react-bootstrap/es/Navbar.js';
+import Nav from 'react-bootstrap/es/Nav.js';
 
 import Contacts from './contacts';
 

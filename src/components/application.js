@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
-import {Grid, Row, Col} from 'react-bootstrap';
+import Grid from 'react-bootstrap/es/Grid.js';
+import Row from 'react-bootstrap/es/Row.js';
+import Col from 'react-bootstrap/es/Col.js';
 
 import Header from './header';
 import Panel from './panel';
