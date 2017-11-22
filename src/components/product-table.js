@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Panel from 'react-bootstrap/es/Panel.js';
-import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
-import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+import BootstrapTable from 'react-bootstrap-table/lib/BootstrapTable.js';
+import TableHeaderColumn from 'react-bootstrap-table/lib/TableHeaderColumn.js';
 
 import pick from 'lodash-es/pick';
 import values from 'lodash-es/values';

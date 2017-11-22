@@ -1,6 +1,8 @@
 import React from 'react';
 import Panel from 'react-bootstrap/es/Panel.js';
-import {YMaps, Map, Placemark} from 'react-yandex-maps';
+import {YMaps} from 'react-yandex-maps/es/YMaps.js';
+import {Map} from 'react-yandex-maps/es/Map.js';
+import {Placemark} from 'react-yandex-maps/es/Helpers';
 
 export default (props) => {
     const {params, navigation} = props;
