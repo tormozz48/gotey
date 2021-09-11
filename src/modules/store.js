@@ -8,13 +8,6 @@ import menu from '../../data/menu.json';
 
 //products
 import cashTape from '../../data/cash-tape.json';
-import checkTape from '../../data/check-tape.json';
-import faxPaper from '../../data/fax-paper.json';
-import lpuPaper from '../../data/paper-lpu.json';
-import rollPaper from '../../data/roll-paper.json';
-import officePaper from '../../data/office-paper.json';
-import plotterRolls from '../../data/plotter-rolls.json';
-import propilenTape from '../../data/propilen-tape.json';
 import stretchFilmFood from '../../data/stretch-film-food.json';
 import termFilm from '../../data/term-film.json';
 import termoLabel from '../../data/termo-label';
@@ -31,13 +24,6 @@ function getInitialState() {
         menu,
         products: {
             cashTape,
-            checkTape,
-            faxPaper,
-            officePaper,
-            lpuPaper,
-            plotterRolls,
-            propilenTape,
-            rollPaper,
             stretchFilmFood,
             termFilm,
             termoLabel
