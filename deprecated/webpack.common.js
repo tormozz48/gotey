@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const meta = require('./data/meta');
+const meta = require('../data/meta');
 
 const srcPath = path.resolve(__dirname, 'src');
 const ouputPath = path.resolve(__dirname, 'www');

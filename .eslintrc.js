@@ -1,19 +1,26 @@
 module.exports = {
-    extends: 'gemini-testing',
-    root: true,
-    plugins: [
-        'react'
-    ],
-    parser: 'babel-eslint',
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-            experimentalObjectRestSpread: true
-        }
+  'env': {
+    'commonjs': true,
+    'es2021': true,
+  },
+  'extends': [
+    'plugin:react/recommended',
+    'google',
+  ],
+  'parserOptions': {
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'jsx': true,
     },
-    rules: {
-        'react/jsx-uses-react': 2,
-        'react/jsx-uses-vars': 2,
-        'react/jsx-no-undef': [2, { allowGlobals: true }]
-    }
+    'ecmaVersion': 12,
+  },
+  'plugins': [
+    'react',
+  ],
+  'rules': {
+    'max-len': ['warn', {'code': 120}],
+    'require-jsdoc': 'off',
+    'react/display-name': 'off',
+    'react/prop-types': 'off',
+  },
 };

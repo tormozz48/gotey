@@ -1,5 +1,6 @@
 'use strict';
 
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
@@ -9,8 +10,8 @@ import Application from './components/application';
 /* eslint-disable no-undef */
 ReactDOM.render(
     <Provider store={store}>
-        <Application/>
+      <Application/>
     </Provider>
-    , document.getElementById('app')
+    , document.getElementById('app'),
 );
 /* eslint-enable no-undef */
