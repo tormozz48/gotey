@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "test": "npm run lint && npm run build",
     "precommit": "npm run lint",
-    "ghPages": "npm run build && node scripts/publish.js"
+    "publish": "npm run build && node scripts/publish.js"
   },
   "keywords": [
     "gotey",
