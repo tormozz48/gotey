@@ -57,7 +57,6 @@ module.exports = {
     static: {
       directory: outputPath,
     },
-    // hot: true,
     liveReload: true,
     compress: true,
     open: true,

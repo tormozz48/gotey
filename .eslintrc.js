@@ -17,6 +17,11 @@ module.exports = {
   'plugins': [
     'react',
   ],
+  'settings': {
+    react: {
+      version: '16.14.0',
+    },
+  },
   'rules': {
     'max-len': ['warn', {'code': 120}],
     'require-jsdoc': 'off',

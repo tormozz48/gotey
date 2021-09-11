@@ -9,8 +9,8 @@
     "build": "WEBPACK_MODE=production webpack build  --progress",
     "lint": "eslint .",
     "test": "npm run lint && npm run build",
-    "precommit": "npm run lint",
-    "publish": "npm run build && node scripts/publish.js"
+    "publish": "npm run build && node scripts/publish.js",
+    "prepare": "husky install"
   },
   "keywords": [
     "gotey",
@@ -53,6 +53,7 @@
     "eslint-plugin-react": "^7.25.1",
     "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.2",
     "mini-css-extract-plugin": "^2.2.2",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0",
