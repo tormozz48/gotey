@@ -30,6 +30,10 @@ body {
     padding: 0;
 }
 
+.panel-body-with-icon {
+    padding-left: 5px;
+}
+
 .footer {
     height: 40px;
     min-height: 35px;
