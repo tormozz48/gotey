@@ -1,16 +1,16 @@
 {
   "name": "gotey",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "website gotey.ru",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "npm run lint",
-    "precommit": "npm run lint",
-    "production": "WEBPACK_MODE=production webpack build  --progress",
-    "dev": "webpack serve --progress",
     "start": "npm run dev",
-    "ghPages": "npm run production && node index.js"
+    "dev": "WEBPACK_MODE=development webpack serve --progress",
+    "build": "WEBPACK_MODE=production webpack build  --progress",
+    "lint": "eslint .",
+    "test": "npm run lint && npm run build",
+    "precommit": "npm run lint",
+    "ghPages": "npm run build && node scripts/publish.js"
   },
   "keywords": [
     "gotey",
@@ -22,11 +22,11 @@
   "author": "andrey.kuznetsov48@yandex.ru",
   "license": "ISC",
   "dependencies": {
-    "classnames": "^2.2.5",
+    "classnames": "^2.3.1",
     "html-react-parser": "^0.4.0",
-    "lodash": "^4.17.4",
-    "lodash-es": "^4.17.4",
-    "prop-types": "^15.6.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "prop-types": "^15.7.2",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-bootstrap-table": "^4.1.4",
@@ -34,11 +34,11 @@
     "react-dom": "^16.0.0",
     "react-lazy-image": "^1.1.0",
     "react-redux": "^5.0.6",
-    "react-scroll": "^1.6.4",
+    "react-scroll": "^1.8.4",
     "react-share": "^4.4.0",
     "react-yandex-maps": "^2.1.3",
-    "react-yandex-metrika": "^2.3.0",
-    "redux": "^3.7.2",
+    "react-yandex-metrika": "^2.6.0",
+    "redux": "^4.1.1",
     "redux-logger": "^3.0.6"
   },
   "devDependencies": {
@@ -51,7 +51,7 @@
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.25.1",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.2",
     "webpack": "^5.52.1",
