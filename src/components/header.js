@@ -11,7 +11,12 @@ export default (props) => {
     <Navbar fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
-          <h1 className="brand">{title}</h1>
+          <h1>
+            <div className="brand">{title}</div>
+            <div className="brand-description">
+              Оптовая продажа чековой ленты и термоэтикетки
+            </div>
+          </h1>
         </Navbar.Brand>
         <Navbar.Toggle/>
       </Navbar.Header>

@@ -9,7 +9,6 @@ import menu from '../../data/menu.json';
 // products
 import cashTape from '../../data/cash-tape.json';
 import stretchFilmFood from '../../data/stretch-film-food.json';
-import termFilm from '../../data/term-film.json';
 import termoLabel from '../../data/termo-label';
 
 const middlewares = [];
@@ -25,7 +24,6 @@ function getInitialState() {
     products: {
       cashTape,
       stretchFilmFood,
-      termFilm,
       termoLabel,
     },
   };

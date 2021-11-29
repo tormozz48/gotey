@@ -51,10 +51,14 @@ export default (props) => {
   const {title, items, id} = props.product;
   const header = <h3>{title}</h3>;
 
+  const options = {
+    withoutNoDataText: true,
+  };
+
   return (
     <div id={id}>
       <Panel header={header}>
-        <BootstrapTable data={items} striped>
+        <BootstrapTable data={items} striped options = {options}>
           {configureColumns(props.columns)}
         </BootstrapTable>
       </Panel>

@@ -8,6 +8,7 @@
         {"name":"58х60 ЕСО","type":"Fasson","amount":60},
         {"name":"58х80 ЕСО","type":"Fasson","amount":50},
         {"name":"30х20 ЕСО","type":"Fasson","amount":56},
-        {"name":"43х25 ЕСО","type":"Fasson","amount":80}
+        {"name":"43х25 ЕСО","type":"Fasson","amount":80},
+        {"name":"100х70","type":"Fasson","amount":16}
     ]
 }

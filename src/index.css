@@ -9,12 +9,20 @@ body {
     background: #d6f3fc;
 }
 
+.navbar-brand {
+    padding: 5px 15px;
+}
+
 .application-content {
     padding-top: 105px;
 }
 
 .brand {
     font-size: 28px;
+}
+
+.brand-description {
+    padding-top: 10px;
 }
 
 .contact__value {
