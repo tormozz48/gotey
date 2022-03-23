@@ -2,14 +2,10 @@
 
 import React from 'react';
 import {
-  FacebookShareButton,
-  TwitterShareButton,
   VKShareButton,
   OKShareButton,
   TelegramShareButton,
   EmailShareButton,
-  FacebookIcon,
-  TwitterIcon,
   TelegramIcon,
   VKIcon,
   OKIcon,
@@ -18,28 +14,6 @@ import {
 
 export default (props) => {
   const {url, title} = props;
-
-  const facebookShare = (
-    <div className="social">
-      <FacebookShareButton
-        url={url}
-        quote={title}
-        className="social__share-button">
-        <FacebookIcon size={32} round/>
-      </FacebookShareButton>
-    </div>
-  );
-
-  const twitterShare = (
-    <div className="social">
-      <TwitterShareButton
-        url={url}
-        title={title}
-        className="social__share-button">
-        <TwitterIcon size={32} round />
-      </TwitterShareButton>
-    </div>
-  );
 
   const telegramShare = (
     <div className="social">
@@ -90,8 +64,6 @@ export default (props) => {
 
   return (
     <span>
-      {facebookShare}
-      {twitterShare}
       {telegramShare}
       {vkShare}
       {okShare}
